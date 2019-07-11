@@ -1,0 +1,42 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container" style="margin-top: 100px">
+    <div class="card-deck">
+        <div class="card">
+            <img src="{% static 'mysite/images/virat.png' %}" class="card-img-top" alt="card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Virat Kohli</h5>
+                <p class="card-text">Virat Kohli is the World's #1 Batsman and he is the captain of indian cricket team
+                    and Royal Challengers Banglore.</p>
+                <p class="card-text">
+                    <small class="text-muted">King Kohli</small>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{% static 'mysite/images/abd.png' %}" class="card-img-top" alt="card image cap">
+            <div class="card-body">
+                <h5 class="card-title">AB deVilliers</h5>
+                <p class="card-text">AB deVilliers is the South African Batsman and he is famous for his 360 degree
+                    shots.</p>
+                <p class="card-text">
+                    <small class="text-muted">MR.360</small>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{% static 'mysite/images/rcb.png' %}" class="card-img-top" alt="card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Royal Challengers Bangalore</h5>
+                <p class="card-text">RCB is the most entertaining and record breaking IPL team and it has most loyal
+                    fans and followers. </p>
+                <p class="card-text">
+                    <small class="text-muted">#PlayBold</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
